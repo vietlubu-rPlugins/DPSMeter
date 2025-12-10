@@ -2,6 +2,8 @@
 
 A real-time damage tracking plugin for ROBrowser that accurately tracks your damage per second (DPS) using server packet interception.
 
+<img width="1320" height="932" alt="image" src="https://github.com/user-attachments/assets/d798d64a-a93f-4937-a37a-080496f41f7f" />
+
 ## Author
 
 **Vietlubu**
@@ -44,7 +46,7 @@ A real-time damage tracking plugin for ROBrowser that accurately tracks your dam
 
 ```javascript
 plugins: {
-	DPSMeter: "Plugins/DPSMeter/DPSMeter";
+	DPSMeter: "DPSMeter/DPSMeter";
 }
 ```
 
@@ -53,7 +55,7 @@ Or with explicit configuration:
 ```javascript
 plugins: {
     DPSMeter: {
-        path: 'Plugins/DPSMeter/DPSMeter',
+        path: 'DPSMeter/DPSMeter',
         pars: null
     }
 }
