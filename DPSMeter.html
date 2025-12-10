@@ -1,0 +1,39 @@
+<div id="DPSMeter">
+	<div class="titlebar">
+		<div class="title">DPS Meter</div>
+		<button class="close"></button>
+	</div>
+	<div class="content">
+		<div class="controls">
+			<button class="btn-start">Start</button>
+			<button class="btn-stop">Stop</button>
+			<button class="btn-reset">Reset</button>
+		</div>
+		<div class="summary">
+			<div class="time-display">
+				<span class="label">Time:</span>
+				<span class="value" id="dps-time">00:00</span>
+			</div>
+			<div class="total-dps">
+				<span class="label">Total DPS:</span>
+				<span class="value" id="dps-total">0</span>
+			</div>
+			<div class="total-damage">
+				<span class="label">Total Damage:</span>
+				<span class="value" id="dps-damage">0</span>
+			</div>
+		</div>
+		<div class="skill-list">
+			<div class="skill-header">
+				<div class="skill-name">Skill/Attack</div>
+				<div class="skill-casts">Casts</div>
+				<div class="skill-damage">Damage</div>
+				<div class="skill-dps">DPS</div>
+				<div class="skill-percent">%</div>
+			</div>
+			<div class="skill-items" id="dps-skills">
+				<!-- Skills will be added here dynamically -->
+			</div>
+		</div>
+	</div>
+</div>

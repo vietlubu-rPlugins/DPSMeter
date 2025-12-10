@@ -1,0 +1,283 @@
+/* DPS Meter Plugin Styles */
+
+#DPSMeter {
+	position: fixed;
+	width: 400px;
+	background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+	border: 2px solid #444;
+	border-radius: 5px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+	color: #ddd;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	z-index: 1000;
+	user-select: none;
+}
+
+#DPSMeter .titlebar {
+	background: linear-gradient(to bottom, #3a3a3a, #2a2a2a);
+	border-bottom: 1px solid #555;
+	padding: 8px 10px;
+	cursor: move;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 3px 3px 0 0;
+}
+
+#DPSMeter .titlebar .title {
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#DPSMeter .titlebar .close {
+	background: #c44;
+	border: 1px solid #a33;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	line-height: 18px;
+	text-align: center;
+}
+
+#DPSMeter .titlebar .close:before {
+	content: "×";
+}
+
+#DPSMeter .titlebar .close:hover {
+	background: #e55;
+}
+
+#DPSMeter .content {
+	padding: 10px;
+}
+
+#DPSMeter .controls {
+	display: flex;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+#DPSMeter .controls button {
+	flex: 1;
+	padding: 6px;
+	border: 1px solid #555;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, #4a4a4a, #2a2a2a);
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+#DPSMeter .controls button:hover {
+	background: linear-gradient(to bottom, #5a5a5a, #3a3a3a);
+	border-color: #666;
+}
+
+#DPSMeter .controls button:active {
+	transform: translateY(1px);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#DPSMeter .controls .btn-start.active {
+	background: linear-gradient(to bottom, #4a7a4a, #2a5a2a);
+	border-color: #3a6a3a;
+	box-shadow: 0 0 8px rgba(100, 255, 100, 0.5);
+}
+
+#DPSMeter .controls .btn-start:hover {
+	background: linear-gradient(to bottom, #5a8a5a, #3a6a3a);
+}
+
+#DPSMeter .controls .btn-start:active,
+#DPSMeter .controls .btn-start.active:active {
+	transform: translateY(1px);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#DPSMeter .controls .btn-stop {
+	background: linear-gradient(to bottom, #7a4a4a, #5a2a2a);
+	border-color: #6a3a3a;
+}
+
+#DPSMeter .controls .btn-stop:hover {
+	background: linear-gradient(to bottom, #8a5a5a, #6a3a3a);
+}
+
+#DPSMeter .controls .btn-reset {
+	background: linear-gradient(to bottom, #4a5a7a, #2a3a5a);
+	border-color: #3a4a6a;
+}
+
+#DPSMeter .controls .btn-reset:hover {
+	background: linear-gradient(to bottom, #5a6a8a, #3a4a6a);
+}
+
+#DPSMeter .summary {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid #333;
+	border-radius: 3px;
+	padding: 8px;
+	margin-bottom: 10px;
+}
+
+#DPSMeter .summary > div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+#DPSMeter .summary > div:last-child {
+	margin-bottom: 0;
+}
+
+#DPSMeter .summary .label {
+	color: #aaa;
+	font-weight: bold;
+}
+
+#DPSMeter .summary .value {
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#DPSMeter .total-dps .value {
+	color: #ff6;
+	font-size: 14px;
+}
+
+#DPSMeter .total-damage .value {
+	color: #f66;
+}
+
+#DPSMeter .skill-list {
+	max-height: 300px;
+	overflow-y: auto;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+
+#DPSMeter .skill-header {
+	display: flex;
+	background: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid #444;
+	padding: 5px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ccc;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#DPSMeter .skill-header > div {
+	padding: 0 5px;
+}
+
+#DPSMeter .skill-name {
+	flex: 2;
+	min-width: 0;
+}
+
+#DPSMeter .skill-casts {
+	flex: 0 0 45px;
+	text-align: right;
+}
+
+#DPSMeter .skill-damage {
+	flex: 1;
+	text-align: right;
+}
+
+#DPSMeter .skill-dps {
+	flex: 1;
+	text-align: right;
+}
+
+#DPSMeter .skill-percent {
+	flex: 0 0 50px;
+	text-align: right;
+}
+
+#DPSMeter .skill-items {
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+#DPSMeter .skill-item {
+	display: flex;
+	padding: 5px;
+	font-size: 11px;
+	border-bottom: 1px solid #2a2a2a;
+	transition: background 0.2s;
+}
+
+#DPSMeter .skill-item:hover {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+#DPSMeter .skill-item:last-child {
+	border-bottom: none;
+}
+
+#DPSMeter .skill-item > div {
+	padding: 0 5px;
+}
+
+#DPSMeter .skill-item .skill-name {
+	color: #aaf;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#DPSMeter .skill-item .skill-casts {
+	color: #aaf;
+}
+
+#DPSMeter .skill-item .skill-damage {
+	color: #f88;
+}
+
+#DPSMeter .skill-item .skill-dps {
+	color: #ff6;
+}
+
+#DPSMeter .skill-item .skill-percent {
+	color: #8f8;
+}
+
+/* Scrollbar styling */
+#DPSMeter .skill-list::-webkit-scrollbar,
+#DPSMeter .skill-items::-webkit-scrollbar {
+	width: 8px;
+}
+
+#DPSMeter .skill-list::-webkit-scrollbar-track,
+#DPSMeter .skill-items::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+#DPSMeter .skill-list::-webkit-scrollbar-thumb,
+#DPSMeter .skill-items::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+}
+
+#DPSMeter .skill-list::-webkit-scrollbar-thumb:hover,
+#DPSMeter .skill-items::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
